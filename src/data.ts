@@ -1,0 +1,78 @@
+import { Category, Product } from './types';
+
+export const CATEGORIES: Category[] = [
+  { id: 'buku', name: 'Buku & Catatan', icon: 'book' },
+  { id: 'elektronik', name: 'Elektronik', icon: 'laptop' },
+  { id: 'pakaian', name: 'Pakaian', icon: 'shirt' },
+  { id: 'kosan', name: 'Perlengkapan Kos', icon: 'home' },
+  { id: 'lainnya', name: 'Lainnya', icon: 'package' },
+];
+
+export const INITIAL_PRODUCTS: Product[] = [
+  {
+    id: '1',
+    title: 'Buku Kalkulus Purcell Edisi 9',
+    price: 85000,
+    description: 'Kondisi 90% mulus, ada sedikit coretan pensil di bab 1-3. Cocok untuk maba FT.',
+    category: 'buku',
+    imageUrl: 'https://picsum.photos/seed/kalkulus/400/400',
+    sellerName: 'Budi Santoso',
+    sellerFaculty: 'Fakultas Teknik',
+    createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
+  },
+  {
+    id: '2',
+    title: 'Kipas Angin Miyako',
+    price: 120000,
+    description: 'Baru dipakai 1 semester. Angin masih kencang, dus masih ada. Alasan jual: mau pindah kosan yang udah ada AC.',
+    category: 'kosan',
+    imageUrl: 'https://picsum.photos/seed/kipas/400/400',
+    sellerName: 'Siti Aminah',
+    sellerFaculty: 'Fakultas Ekonomi dan Bisnis',
+    createdAt: new Date(Date.now() - 86400000 * 5).toISOString(),
+  },
+  {
+    id: '3',
+    title: 'Kalkulator Scientific Casio fx-991EX',
+    price: 250000,
+    description: 'Wajib punya buat anak teknik/mipa. Kondisi normal semua tombol berfungsi.',
+    category: 'elektronik',
+    imageUrl: 'https://picsum.photos/seed/casio/400/400',
+    sellerName: 'Andi Pratama',
+    sellerFaculty: 'Fakultas Pertanian',
+    createdAt: new Date(Date.now() - 86400000 * 1).toISOString(),
+  },
+  {
+    id: '4',
+    title: 'Rak Sepatu Plastik 4 Susun',
+    price: 35000,
+    description: 'Kondisi masih bagus, gak ada yang patah. Bisa bongkar pasang.',
+    category: 'kosan',
+    imageUrl: 'https://picsum.photos/seed/rak/400/400',
+    sellerName: 'Rina Wati',
+    sellerFaculty: 'Fakultas Keguruan dan Ilmu Pendidikan',
+    createdAt: new Date(Date.now() - 86400000 * 10).toISOString(),
+  },
+  {
+    id: '5',
+    title: 'Kemeja Flanel Uniqlo Size L',
+    price: 90000,
+    description: 'Jarang dipakai, warna masih pekat. Cocok buat ngampus.',
+    category: 'pakaian',
+    imageUrl: 'https://picsum.photos/seed/flanel/400/400',
+    sellerName: 'Dimas Anggara',
+    sellerFaculty: 'Fakultas Ilmu Sosial dan Ilmu Politik',
+    createdAt: new Date(Date.now() - 86400000 * 3).toISOString(),
+  },
+  {
+    id: '6',
+    title: 'Jas Lab Untirta Size M',
+    price: 60000,
+    description: 'Udah lulus, jadi gak kepake lagi. Kondisi masih putih bersih.',
+    category: 'pakaian',
+    imageUrl: 'https://picsum.photos/seed/jaslab/400/400',
+    sellerName: 'Ayu Lestari',
+    sellerFaculty: 'Fakultas Kedokteran',
+    createdAt: new Date(Date.now() - 86400000 * 7).toISOString(),
+  }
+];
