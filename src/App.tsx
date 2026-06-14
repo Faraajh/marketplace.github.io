@@ -92,7 +92,17 @@ export default function App() {
             </p>
           </div>
         )}
-      </main>
+      </main>      <footer className="bg-white border-t border-gray-100 py-8 mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-2">
+            <span className="text-lg font-bold text-gray-900 tracking-tight">🛒 TirtaBekas</span>
+            <span className="text-xs text-gray-400">| Hub Khusus Untirta</span>
+          </div>
+          <p className="text-xs text-gray-400">
+            &copy; {new Date().getFullYear()} TirtaBekas. Semua hak dilindungi.
+          </p>
+        </div>
+      </footer>
 
       <SellModal
         isOpen={isSellModalOpen}
